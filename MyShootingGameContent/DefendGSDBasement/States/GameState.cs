@@ -46,9 +46,9 @@ namespace DefendGSDBasement.States
         {
             spriteBatch.Begin();
             _gameManager.Draw();
-            spriteBatch.DrawString(_font, "HP: " + _gameManager.Player.HP.ToString(), new Vector2(Globals.Bounds.X / 2 - 100, 0), Color.White);
+            spriteBatch.DrawString(_font, "HP: " + _gameManager.Player.HP.ToString(), new Vector2(Globals.Bounds.X / 2 - 100, 0), Color.Red);
             spriteBatch.Draw(_heart, new Vector2(Globals.Bounds.X / 2, -10), Color.White);
-            spriteBatch.DrawString(_font, "Level: " + _gameManager.Player.level, new Vector2(Globals.Bounds.X / 2 + 100, 0), Color.White);
+            spriteBatch.DrawString(_font, "Level: " + _gameManager.Player.level, new Vector2(Globals.Bounds.X / 2 + 100, 0), Color.Red);
             if (_gameManager.Player.gunMsg == "MG")
                 spriteBatch.Draw(_mg, _gameManager.Player.origin, new Rectangle(0, 0, _mg.Width, _mg.Height), Color.Black, 0, new Vector2(0, 0), 0.15f, SpriteEffects.None, 1);
             else if (_gameManager.Player.gunMsg == "Shotgun")

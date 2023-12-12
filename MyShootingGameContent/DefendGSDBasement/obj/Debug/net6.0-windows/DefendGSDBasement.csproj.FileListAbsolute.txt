@@ -94,9 +94,6 @@ C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasem
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\Shotgun.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile1.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile2.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile3.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile4.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile5.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\title.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\zombie.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\zombiebasic.xnb
@@ -129,3 +126,6 @@ C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasem
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\obj\Debug\net6.0-windows\DefendGSDBasement.csproj.CopyComplete
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\obj\Debug\net6.0-windows\DefendGSDBasement.genruntimeconfig.cache
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\obj\Debug\net6.0-windows\ref\DefendGSDBasement.dll
+C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\backgroundGrass.xnb
+C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\wallpaper.xnb
+C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\wallpaper2.xnb

@@ -5,11 +5,12 @@ namespace DefendGSDBasement
     public class GameManager
     {
         public Player Player {  get; set; }
-        private readonly Background _bg;
+        private Texture2D _bg, _bg2;
 
         public GameManager()
         {
-            _bg = new();
+            _bg = Globals.Content.Load<Texture2D>("wallpaper");
+            _bg2 = Globals.Content.Load<Texture2D>("wallpaper2");
             var texture = Globals.Content.Load<Texture2D>("bullet");
             ProjectileManager.Init(texture);
             UIManager.Init(texture);
@@ -38,7 +39,14 @@ namespace DefendGSDBasement
 
         public void Draw()
         {
-            _bg.Draw();
+            if (Player.level % 2 == 0) 
+            {
+                Globals.SpriteBatch.Draw(_bg2, Vector2.Zero, Color.White);
+            }
+            else
+            {
+                Globals.SpriteBatch.Draw(_bg, Vector2.Zero, Color.White);
+            }
             ExperienceManager.Draw();
             ProjectileManager.Draw();
             ZombieManager.Draw();

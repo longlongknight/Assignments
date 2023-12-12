@@ -40,7 +40,7 @@ namespace DefendGSDBasement
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             _bgm = Content.Load<Song>("ImageCorruptor");
             MediaPlayer.Play(_bgm);
-            MediaPlayer.Volume = 0.15f;
+            MediaPlayer.Volume = 0.1f;
             MediaPlayer.IsRepeating = true;
 
             _currentState = new MenuState(this);
