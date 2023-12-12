@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.Xna.Framework.Audio;
 
 namespace DefendGSDBasement
 {
@@ -8,11 +8,20 @@ namespace DefendGSDBasement
         public Weapon Weapon { get; set; }
         private Weapon _weapon1;
         private Weapon _weapon2;
+        private float HitCD, MaxHitCD = 1.5f;
         public bool Dead { get; private set; }
         public int Experience { get; private set; }
+        public int HP { get; private set; }
+        private SoundEffect _soundEffect;
+        private SoundEffectInstance _soundEffectInstance = null;
+        public string gunMsg = "MG";
 
         public Player(Texture2D tex) : base(tex, GetStartPosition())
         {
+            _soundEffect = Globals.Content.Load<SoundEffect>("gunfire");
+            if (_soundEffectInstance == null)
+                _soundEffectInstance = _soundEffect.CreateInstance();
+            _soundEffectInstance.Volume = 0.3f;
             Reset();
         }
 
@@ -34,22 +43,47 @@ namespace DefendGSDBasement
             Weapon = _weapon1;
             Position = GetStartPosition();
             Experience = 0;
+            HP = 10;
+            HitCD = 0f;
         }
 
         public void SwapWeapon()
         {
-            Weapon = (Weapon == _weapon1) ? _weapon2 : _weapon1;
+            if (Weapon != _weapon1)
+            {
+                Weapon = _weapon1;
+                gunMsg = "MG";
+            }
+            else if (Weapon != _weapon2)
+            {
+                Weapon = _weapon2;
+                gunMsg = "Shotgun";
+            }
+
         }
 
-        private void CheckDeath(List<Zombie> zombies)
+        public void TakeDamage(List<Zombie> zombies)
         {
-            foreach (var z in zombies)
+            if (HitCD > 0) return;
+                Color = Color.White;
+
+            foreach (Zombie z in zombies)
             {
                 if (z.HP <= 0) continue;
-                if ((Position - z.Position).Length() < 50)
+                if (this.BoundingRect.Intersects(z.BoundingRect))
                 {
-                    Dead = true;
-                    break;
+                    if (Collision.PixelCollision(this, z))
+                    {
+                        HP--;
+                        Color = Color.Red;
+                        HitCD = MaxHitCD;
+
+                        if (HP <= 0)
+                        {
+                            Dead = true;
+                            break;
+                        }
+                    }
                 }
             }
         }
@@ -85,7 +119,16 @@ namespace DefendGSDBasement
                 Weapon.Reload();
             }
 
-            CheckDeath(zombies);
+
+            if (HitCD > 0)
+            {
+                HitCD -= Globals.TotalSeconds;
+            }
+
+
+            UpdateBoundingRect();
+
+            TakeDamage(zombies);
         }
     }
 }

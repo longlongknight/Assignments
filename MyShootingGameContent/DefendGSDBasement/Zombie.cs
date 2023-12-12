@@ -4,6 +4,7 @@
     {
         public int HP { get; private set; }
 
+
         public Zombie(Texture2D tex, Vector2 pos) : base(tex, pos)
         {
             Speed = 100;
@@ -26,6 +27,8 @@
                 var dir = Vector2.Normalize(toPlayer);
                 Position += dir * Speed * Globals.TotalSeconds;
             }
+
+            UpdateBoundingRect();
         }
     }
 }

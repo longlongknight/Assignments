@@ -1,4 +1,6 @@
-﻿namespace DefendGSDBasement
+﻿using Microsoft.Xna.Framework.Audio;
+
+namespace DefendGSDBasement
 {
     public abstract class Weapon
     {
@@ -10,7 +12,7 @@
         public bool Reloading { get; protected set; }
 
         protected Weapon()
-        {
+        { 
             cooldownLeft = 0f;
             Reloading = false;
         }

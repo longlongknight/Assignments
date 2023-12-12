@@ -1,13 +1,18 @@
-﻿namespace DefendGSDBasement
+﻿using Microsoft.Xna.Framework.Audio;
+
+namespace DefendGSDBasement
 {
     public class Shotgun : Weapon
     {
+        private SoundEffect _soundEffect;
+
         public Shotgun()
         {
+            _soundEffect = Globals.Content.Load<SoundEffect>("Shotgun");
             cooldown = 0.75f;
-            maxAmmo = 8;
+            maxAmmo = 10;
             Ammo = maxAmmo;
-            reloadTime = 3f;
+            reloadTime = 2f;
         }
 
         protected override void CreateProjectiles(Player player)
@@ -28,6 +33,7 @@
                 pd.Rotation += angleStep;
                 ProjectileManager.AddProjectile(pd);
             }
+            _soundEffect.Play(0.15f, 0f, 0f);
         }
     }
 }
