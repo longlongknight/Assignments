@@ -8,18 +8,17 @@ namespace DefendGSDBasement
     {
         public static List<Zombie> Zombies { get; } = new();
         private static Texture2D _texture;
-        private static float _spawnCooldown;
+        public static float spawnCooldown { get; set; }
         private static float _spawnTime;
         private static Random _random;
         private static int _padding, _prevExp;
-        public static int level = 1;
 
 
         public static void Init()
         {
             _texture = Globals.Content.Load<Texture2D>("zombiebasic");
-            _spawnCooldown = 1f;
-            _spawnTime = _spawnCooldown;
+            spawnCooldown = 1f;
+            _spawnTime = spawnCooldown;
             _random = new();
             _padding = _texture.Width / 2;
         }
@@ -27,9 +26,9 @@ namespace DefendGSDBasement
         public static void Reset()
         {
             Zombies.Clear();
-            _spawnCooldown = 1f;
+            spawnCooldown = 1f;
             _prevExp = 0;
-            _spawnTime = _spawnCooldown;
+            _spawnTime = spawnCooldown;
         }
 
         private static Vector2 RandomPosition()
@@ -62,18 +61,8 @@ namespace DefendGSDBasement
             _spawnTime -= Globals.TotalSeconds;
             while (_spawnTime <= 0)
             {
-                _spawnTime += _spawnCooldown;
-                if (player.Experience % 20 == 0 && player.Experience != 0 
-                    && player.Experience != _prevExp && player.Experience < 81)
-                {
-                    _spawnCooldown /= 2f;
-                    _prevExp += 20;
-                    level++;
-
-                    Debug.WriteLine(_spawnCooldown, "Speed:");
-                    Debug.WriteLine(_prevExp, "Passed:");
-                }
-             AddZombie();
+                _spawnTime += spawnCooldown;
+                AddZombie();
             }
 
             foreach (var z in Zombies)

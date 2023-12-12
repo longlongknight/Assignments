@@ -4,33 +4,33 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/bullet.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/button.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/Button2.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/Button3.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/Button4.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/exp.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/FireSparks.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/font.spritefont</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/gunfire.wav</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/heart.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/ImageCorruptor.mp3</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/m870.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/MenuBG.jpg</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/MenuBG2.jpg</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/mp5.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/player_9mmhandgun.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/player.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/pngwing.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/Shotgun.wav</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/tile1.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/tile2.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/tile3.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/tile4.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/tile5.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/title.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/zombie.png</File>
-    <File>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/zombiebasic.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/bullet.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/button.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/Button2.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/Button3.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/Button4.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/exp.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/FireSparks.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/font.spritefont</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/gunfire.wav</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/heart.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/ImageCorruptor.mp3</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/m870.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/MenuBG.jpg</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/MenuBG2.jpg</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/mp5.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/player_9mmhandgun.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/player.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/pngwing.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/Shotgun.wav</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/tile1.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/tile2.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/tile3.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/tile4.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/tile5.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/title.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/zombie.png</File>
+    <File>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/zombiebasic.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

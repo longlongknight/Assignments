@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/Button4.png</SourceFile>
+  <SourceFile>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/Button4.png</SourceFile>
   <SourceTime>2019-01-21T16:35:58.3945312+08:00</SourceTime>
-  <DestFile>C:/Users/longl/Downloads/MyShootingGameContent/DefendGSDBasement/Content/bin/Windows/Content/Button4.xnb</DestFile>
-  <DestTime>2023-12-12T21:39:34.3112167+08:00</DestTime>
+  <DestFile>C:/Users/longl/Documents/GitHub/Assignments/MyShootingGameContent/DefendGSDBasement/Content/bin/Windows/Content/Button4.xnb</DestFile>
+  <DestTime>2023-12-13T01:00:10.9734568+08:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T19:44:56+08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

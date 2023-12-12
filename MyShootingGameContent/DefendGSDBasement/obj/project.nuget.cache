@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fIh6XmkJxAsnrT+RiFqZDwX9OlWfndN7x2xXburOBl8mryjsH9ijOYsqYy4kHtxm1hbRnfGaCMNB2xPFACVRUQ==",
+  "dgSpecHash": "Na3yqtZ1THjPs1tuwOtqXiZCC0sQV5rfUSp9S1RFAwXnNZI/rn/H7aVq8jXvEHYMvqhfXKomEh5kSbQ+F5v20Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\longl\\Downloads\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
+  "projectFilePath": "C:\\Users\\longl\\Documents\\GitHub\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\longl\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\longl\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",

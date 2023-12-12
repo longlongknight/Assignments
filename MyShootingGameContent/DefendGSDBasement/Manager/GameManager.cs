@@ -41,8 +41,8 @@ namespace DefendGSDBasement
             _bg.Draw();
             ExperienceManager.Draw();
             ProjectileManager.Draw();
-            Player.Draw();
             ZombieManager.Draw();
+            Player.Draw();
             UIManager.Draw(Player);
         }
     }

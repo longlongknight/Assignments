@@ -11,14 +11,22 @@ namespace DefendGSDBasement
         private float HitCD, MaxHitCD = 1.5f;
         public bool Dead { get; private set; }
         public int Experience { get; private set; }
-        public int HP { get; private set; }
+        public int HP { get; set; }
+        public int MaxHP { get; set; }
         private SoundEffect _soundEffect;
         private SoundEffectInstance _soundEffectInstance = null;
         public string gunMsg = "MG";
+        public float msgTimer;
+        public string levelupMsg;
+        private SpriteFont _font;
+        public int level = 1;
+        public float difficultyEditor = 0.15f;
+        private int expReq = 20;
 
         public Player(Texture2D tex) : base(tex, GetStartPosition())
         {
             _soundEffect = Globals.Content.Load<SoundEffect>("gunfire");
+            _font = Globals.Content.Load<SpriteFont>("font");
             if (_soundEffectInstance == null)
                 _soundEffectInstance = _soundEffect.CreateInstance();
             _soundEffectInstance.Volume = 0.3f;
@@ -33,6 +41,17 @@ namespace DefendGSDBasement
         public void GetExperience(int exp)
         {
             Experience += exp;
+            if(Experience % expReq == 0)
+            {
+                levelupMsg = "Level acheived, ++Speed & Maximum HP";
+                Speed += 30;
+                msgTimer = 2f;
+                level++;
+                MaxHP += 10;
+                HP = MaxHP;
+                ZombieManager.spawnCooldown -= difficultyEditor;
+                expReq += expReq;
+            }
         }
 
         public void Reset()
@@ -43,7 +62,8 @@ namespace DefendGSDBasement
             Weapon = _weapon1;
             Position = GetStartPosition();
             Experience = 0;
-            HP = 10;
+            MaxHP = 10;
+            HP = MaxHP;
             HitCD = 0f;
         }
 
@@ -128,7 +148,19 @@ namespace DefendGSDBasement
 
             UpdateBoundingRect();
 
+            msgTimer -= Globals.TotalSeconds;
+
             TakeDamage(zombies);
+        }
+
+        public override void Draw()
+        {
+            base.Draw();
+            if (msgTimer > 0)
+            {
+                var msgPos = Position;
+                Globals.SpriteBatch.DrawString(_font, levelupMsg, new(msgPos.X - 200, msgPos.Y), Color.Aqua);
+            }
         }
     }
 }
