@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DefendGSDBasement")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d399d80ec6311ff6da62771256cefb24b91cd068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DefendGSDBasement")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DefendGSDBasement")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
