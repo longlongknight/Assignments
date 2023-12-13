@@ -7524,23 +7524,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\longl\\.nuget\\packages\\": {},
+    "C:\\Users\\erosn\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\longl\\Documents\\GitHub\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
+      "projectUniqueName": "C:\\Users\\erosn\\Downloads\\ILaughU3000 Temp\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
       "projectName": "DefendGSDBasement",
-      "projectPath": "C:\\Users\\longl\\Documents\\GitHub\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
-      "packagesPath": "C:\\Users\\longl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\longl\\Documents\\GitHub\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\obj\\",
+      "projectPath": "C:\\Users\\erosn\\Downloads\\ILaughU3000 Temp\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\DefendGSDBasement.csproj",
+      "packagesPath": "C:\\Users\\erosn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erosn\\Downloads\\ILaughU3000 Temp\\Assignments\\MyShootingGameContent\\DefendGSDBasement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\longl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erosn\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7549,7 +7549,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
