@@ -12,7 +12,6 @@ namespace DefendGSDBasement.States
         public GameManager _gameManager { get; set; }
         private Texture2D _cursor, _mg, _shotgun, _heart;
         private SpriteFont _font;
-        private List<Button> _buttons;
 
         public GameState(Game1 game) : base(game)
         {
@@ -25,12 +24,11 @@ namespace DefendGSDBasement.States
 
         public override void LoadContent()
         {
-            _buttons = new List<Button>();
             _font = Globals.Content.Load<SpriteFont>("font");
             _heart = Globals.Content.Load<Texture2D>("heart");
-            _cursor = Globals.Content.Load<Texture2D>("pngwing");
-            _mg = Globals.Content.Load<Texture2D>("mp5");
-            _shotgun = Globals.Content.Load<Texture2D>("m870");
+            _cursor = Globals.Content.Load<Texture2D>("aimpoint");
+            _mg = Globals.Content.Load<Texture2D>("LaserLogo");
+            _shotgun = Globals.Content.Load<Texture2D>("BurstLogo");
         }
 
         public override void Update(GameTime gameTime)
@@ -50,9 +48,9 @@ namespace DefendGSDBasement.States
             spriteBatch.Draw(_heart, new Vector2(Globals.Bounds.X / 2, -10), Color.White);
             spriteBatch.DrawString(_font, "Level: " + _gameManager.Player.level, new Vector2(Globals.Bounds.X / 2 + 100, 0), Color.Red);
             if (_gameManager.Player.gunMsg == "MG")
-                spriteBatch.Draw(_mg, _gameManager.Player.origin, new Rectangle(0, 0, _mg.Width, _mg.Height), Color.Black, 0, new Vector2(0, 0), 0.15f, SpriteEffects.None, 1);
+                spriteBatch.Draw(_mg, _gameManager.Player.origin, new Rectangle(0, 0, _mg.Width, _mg.Height), Color.White, 0, new Vector2(0, 0), 1, SpriteEffects.None, 1);
             else if (_gameManager.Player.gunMsg == "Shotgun")
-                spriteBatch.Draw(_shotgun, _gameManager.Player.origin, new Rectangle(0, 0, _shotgun.Width, _shotgun.Height), Color.Black, 0, new Vector2(0, 0), 0.15f, SpriteEffects.None, 1);
+                spriteBatch.Draw(_shotgun, _gameManager.Player.origin, new Rectangle(0, 0, _shotgun.Width, _shotgun.Height), Color.White, 0, new Vector2(0, 0), 1.2f, SpriteEffects.None, 1);
             spriteBatch.Draw(_cursor, InputManager.MousePosition, new Rectangle(0, 0, 50, 50), Color.White, _gameManager.Player.Rotation, new Vector2(_cursor.Width / 2, _cursor.Height / 2), 1, SpriteEffects.None, 1);
             spriteBatch.End();
         }

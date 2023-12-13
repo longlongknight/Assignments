@@ -9,11 +9,12 @@ namespace DefendGSDBasement
 
         public GameManager()
         {
-            _bg = Globals.Content.Load<Texture2D>("wallpaper");
+            _bg = Globals.Content.Load<Texture2D>("wallpaper1");
             _bg2 = Globals.Content.Load<Texture2D>("wallpaper2");
-            var texture = Globals.Content.Load<Texture2D>("projectile_1");
-            ProjectileManager.Init(texture);
-            UIManager.Init(texture);
+            var laserTex = Globals.Content.Load<Texture2D>("projectile_1");
+            var bulletTex = Globals.Content.Load<Texture2D>("bullet");
+            ProjectileManager.Init(laserTex, bulletTex);
+            UIManager.Init(bulletTex);
             ExperienceManager.Init(Globals.Content.Load<Texture2D>("FireSparks"));
 
             Player = new(Globals.Content.Load<Texture2D>("player_3"));
@@ -41,11 +42,11 @@ namespace DefendGSDBasement
         {
             if (Player.level % 2 == 0) 
             {
-                Globals.SpriteBatch.Draw(_bg2, Vector2.Zero, Color.White);
+                Globals.SpriteBatch.Draw(_bg, Vector2.Zero, Color.White);
             }
             else
             {
-                Globals.SpriteBatch.Draw(_bg, Vector2.Zero, Color.White);
+                Globals.SpriteBatch.Draw(_bg2, Vector2.Zero, Color.White);
             }
             ExperienceManager.Draw();
             ProjectileManager.Draw();

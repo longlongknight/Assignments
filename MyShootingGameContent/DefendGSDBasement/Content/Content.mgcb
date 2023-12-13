@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin backgroundGrass.png
+#begin aimpoint.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,7 +23,13 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:backgroundGrass.png
+/build:aimpoint.png
+
+#begin blaster.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:blaster.wav
 
 #begin bullet.png
 /importer:TextureImporter
@@ -36,6 +42,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:bullet.png
+
+#begin BurstLogo.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:BurstLogo.png
 
 #begin button.png
 /importer:TextureImporter
@@ -85,17 +103,11 @@
 /processorParam:TextureFormat=Color
 /build:Button4.png
 
-#begin exp.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:exp.png
+#begin cannon-shot-14799.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:cannon-shot-14799.wav
 
 #begin FireSparks.png
 /importer:TextureImporter
@@ -116,12 +128,6 @@
 /processorParam:TextureFormat=Compressed
 /build:font.spritefont
 
-#begin gunfire.wav
-/importer:WavImporter
-/processor:SoundEffectProcessor
-/processorParam:Quality=Best
-/build:gunfire.wav
-
 #begin heart.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -140,7 +146,7 @@
 /processorParam:Quality=Best
 /build:ImageCorruptor.mp3
 
-#begin m870.png
+#begin LaserLogo.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -150,7 +156,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:m870.png
+/build:LaserLogo.png
 
 #begin MenuBG.jpg
 /importer:TextureImporter
@@ -175,18 +181,6 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:MenuBG2.jpg
-
-#begin mp5.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/processorParam:ColorKeyColor=255,0,255,255
-/processorParam:ColorKeyEnabled=True
-/processorParam:GenerateMipmaps=False
-/processorParam:PremultiplyAlpha=True
-/processorParam:ResizeToPowerOfTwo=False
-/processorParam:MakeSquare=False
-/processorParam:TextureFormat=Color
-/build:mp5.png
 
 #begin player_3.png
 /importer:TextureImporter
@@ -302,7 +296,7 @@
 /processorParam:TextureFormat=Color
 /build:title.png
 
-#begin wallpaper.jpg
+#begin wallpaper1.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -312,7 +306,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:wallpaper.jpg
+/build:wallpaper1.png
 
 #begin wallpaper2.jpg
 /importer:TextureImporter

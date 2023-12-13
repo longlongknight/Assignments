@@ -13,8 +13,6 @@ namespace DefendGSDBasement
         public int Experience { get; private set; }
         public int HP { get; set; }
         public int MaxHP { get; set; }
-        private SoundEffect _soundEffect;
-        private SoundEffectInstance _soundEffectInstance = null;
         public string gunMsg = "MG";
         public float msgTimer;
         public string levelupMsg;
@@ -25,11 +23,7 @@ namespace DefendGSDBasement
 
         public Player(Texture2D tex) : base(tex, GetStartPosition())
         {
-            _soundEffect = Globals.Content.Load<SoundEffect>("gunfire");
             _font = Globals.Content.Load<SpriteFont>("font");
-            if (_soundEffectInstance == null)
-                _soundEffectInstance = _soundEffect.CreateInstance();
-            _soundEffectInstance.Volume = 0.3f;
             Reset();
         }
 
@@ -51,13 +45,24 @@ namespace DefendGSDBasement
                 HP = MaxHP;
                 ZombieManager.spawnCooldown -= difficultyEditor;
                 expReq += expReq;
+                if (level % 4 == 0)
+                {
+                    _weapon1.maxAmmo += 20;
+                    levelupMsg = "Laser Blaster Update";
+                }
+                else if (level % 6 == 0)
+                {
+                    _weapon2.burstAmount += 2;
+                    levelupMsg = "Burst Cannon Update";
+                }
+                    
             }
         }
 
         public void Reset()
         {
-            _weapon1 = new MachineGun();
-            _weapon2 = new Shotgun();
+            _weapon1 = new LaserBlaster();
+            _weapon2 = new BurstCannon();
             Dead = false;
             Weapon = _weapon1;
             Position = GetStartPosition();

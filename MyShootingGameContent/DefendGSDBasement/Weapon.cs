@@ -6,7 +6,8 @@ namespace DefendGSDBasement
     {
         protected float cooldown;
         protected float cooldownLeft;
-        protected int maxAmmo;
+        public int maxAmmo;
+        public int burstAmount = 5;
         public int Ammo { get; protected set; }
         protected float reloadTime;
         public bool Reloading { get; protected set; }

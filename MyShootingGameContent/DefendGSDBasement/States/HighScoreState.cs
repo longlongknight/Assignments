@@ -73,8 +73,8 @@ namespace DefendGSDBasement.States
 
             foreach (var component in components)
                 component.Draw();
-            spriteBatch.DrawString(font, "You Dead!", new Vector2(Globals.Bounds.X / 2 - 180, 0), Color.Red, 0, new Vector2(0, 0), 2, SpriteEffects.None, 1);
-            spriteBatch.DrawString(font, "Record: " + ExperienceManager._playerExp, new Vector2(400, 100), Color.White, 0, new Vector2(0, 0), 1, SpriteEffects.None, 1);
+            spriteBatch.DrawString(font, "You Dead!", new Vector2(Globals.Bounds.X / 2 - 50, 0), Color.Red, 0, new Vector2(0, 0), 2, SpriteEffects.None, 1);
+            spriteBatch.DrawString(font, "Record: " + ExperienceManager._playerExp, new Vector2(400, 100), Color.Black, 0, new Vector2(0, 0), 1, SpriteEffects.None, 1);
 
             spriteBatch.End();
         }

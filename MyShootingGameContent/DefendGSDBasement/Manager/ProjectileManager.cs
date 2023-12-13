@@ -5,11 +5,13 @@ namespace DefendGSDBasement
     public static class ProjectileManager
     {
         private static Texture2D _texture;
+        private static Texture2D _texture2;
         public static List<Projectile> Projectiles { get; } = new();
 
-        public static void Init(Texture2D tex)
+        public static void Init(Texture2D tex, Texture2D tex2)
         {
             _texture = tex;
+            _texture2 = tex2;
         }
 
         public static void Reset()
