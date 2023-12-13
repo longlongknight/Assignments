@@ -23,7 +23,7 @@ namespace DefendGSDBasement
             {
                 Position = player.Position,
                 Rotation = player.Rotation - (3 * angleStep),
-                Lifespan = 1f,
+                Lifespan = 0.5f,
                 Speed = 800,
                 Damage = 2
             };

@@ -84,15 +84,7 @@ C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasem
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\ImageCorruptor.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\MenuBG.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\MenuBG2.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\player.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\player_9mmhandgun.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\pngwing.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\Shotgun.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile1.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\tile2.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\title.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\zombie.xnb
-C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\Content\zombiebasic.xnb
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\DefendGSDBasement.exe
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\DefendGSDBasement.deps.json
 C:\Users\longl\Documents\GitHub\Assignments\MyShootingGameContent\DefendGSDBasement\bin\Debug\net6.0-windows\DefendGSDBasement.runtimeconfig.json

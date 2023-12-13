@@ -48,12 +48,12 @@ namespace DefendGSDBasement
                 if (level % 4 == 0)
                 {
                     _weapon1.maxAmmo += 20;
-                    levelupMsg = "Laser Blaster Update";
+                    levelupMsg = "Laser Blaster Upgrade";
                 }
                 else if (level % 6 == 0)
                 {
                     _weapon2.burstAmount += 2;
-                    levelupMsg = "Burst Cannon Update";
+                    levelupMsg = "Burst Cannon Upgrade";
                 }
                     
             }
