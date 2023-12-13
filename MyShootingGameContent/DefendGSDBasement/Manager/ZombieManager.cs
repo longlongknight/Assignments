@@ -16,7 +16,7 @@ namespace DefendGSDBasement
 
         public static void Init()
         {
-            _texture = Globals.Content.Load<Texture2D>("zombiebasic");
+            _texture = Globals.Content.Load<Texture2D>("purple_03");
             spawnCooldown = 1f;
             _spawnTime = spawnCooldown;
             _random = new();

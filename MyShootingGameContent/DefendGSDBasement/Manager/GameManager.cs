@@ -11,12 +11,12 @@ namespace DefendGSDBasement
         {
             _bg = Globals.Content.Load<Texture2D>("wallpaper");
             _bg2 = Globals.Content.Load<Texture2D>("wallpaper2");
-            var texture = Globals.Content.Load<Texture2D>("bullet");
+            var texture = Globals.Content.Load<Texture2D>("projectile_1");
             ProjectileManager.Init(texture);
             UIManager.Init(texture);
             ExperienceManager.Init(Globals.Content.Load<Texture2D>("FireSparks"));
 
-            Player = new(Globals.Content.Load<Texture2D>("player_9mmhandgun"));
+            Player = new(Globals.Content.Load<Texture2D>("player_3"));
             ZombieManager.Init();
         }
 
